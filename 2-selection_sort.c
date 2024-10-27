@@ -30,7 +30,7 @@ void selection_sort(int *array, size_t size)
 			}
 		}
 		if (!swapped)
-			continue;;
+			continue;
 		array[index] = array[i];
 		array[i] = smallest;
 		print_array(array, size);
