@@ -5,7 +5,7 @@
 *@item1: array element
 *@item2: array element
 */
-void swap(int *array, ssize_t item1, ssize_t item2)
+void swap(int *array, size_t item1, size_t item2)
 {
 	int tmp;
 
@@ -21,10 +21,10 @@ void swap(int *array, ssize_t item1, ssize_t item2)
 *@size: size array
 *Return: return the position of the last element sorted
 */
-int lomuto_partition(int *array, ssize_t first, ssize_t last, size_t size)
+int lomuto_partition(int *array, size_t first, size_t last, size_t size)
 {
 	int pivot = array[last];
-	ssize_t current = first, finder;
+	size_t current = first, finder;
 
 	for (finder = first; finder < last; finder++)
 	{
@@ -52,9 +52,9 @@ int lomuto_partition(int *array, ssize_t first, ssize_t last, size_t size)
 *@last: last array element
 *@size: array size
 */
-void qs(int *array, ssize_t first, ssize_t last, int size)
+void qs(int *array, size_t first, size_t last, int size)
 {
-	ssize_t position = 0;
+	size_t position = 0;
 
 
 	if (first < last)
@@ -74,5 +74,4 @@ void quick_sort(int *array, size_t size)
 {
 	if (!array || size < 2)
 		return;
-	qs(array, 0, size - 1, size);
 }
