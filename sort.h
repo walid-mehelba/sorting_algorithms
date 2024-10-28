@@ -28,7 +28,8 @@ listint_t *swap_node(listint_t *node, listint_t **list);
 void swap(int *array, size_t item1, size_t item2);
 void qs(int *array, size_t first, size_t last, int size);
 void shell_sort(int *array, size_t size);
-void print_array(const int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
+
 #endif
